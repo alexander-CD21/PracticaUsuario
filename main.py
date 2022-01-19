@@ -1,0 +1,22 @@
+from usuario import Usuario 
+
+cuenta1 = Usuario("maria","maria_villegas@dojo.com")
+cuenta2 = Usuario("pepito","pepito_canales@dojo.com")
+cuenta3 = Usuario("federica","federica_ludovico@dojo.com")
+
+cuenta1.hacerDeposito(200)
+cuenta1.hacerDeposito(1000)
+cuenta1.hacerDeposito(2000)
+cuenta1.hacerRetiro(39)
+cuenta1.mostrarBalanceUsuario()
+cuenta2.hacerDeposito(5000)
+cuenta2.hacerDeposito(1000)
+cuenta2.hacerRetiro(1000)
+cuenta2.hacerRetiro(1500)
+cuenta2.mostrarBalanceUsuario()
+cuenta3.hacerDeposito(1000)
+cuenta3.hacerRetiro(200)
+cuenta3.hacerRetiro(200)
+cuenta3.hacerRetiro(200)
+cuenta3.mostrarBalanceUsuario()
+cuenta1.transferirDinero(100,cuenta3)
